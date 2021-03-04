@@ -52,7 +52,7 @@ li {
     margin-left: 5pt;
 }
 
-#rightbox{
+#rightbox {
     background-color: lightgray;
     position: absolute;
     right: 0;
@@ -62,4 +62,17 @@ li {
     margin-right: 5pt;
     margin-top: 5pt;
     border-radius: 2%;
+}
+
+#contact {
+    margin-top: 5pt;
+
+}
+
+.skillsli {
+    color: rgb(52, 157, 248);
+}
+
+li::marker {
+    color: rgb(61, 61, 61);
 }
