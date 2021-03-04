@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from .secret_settings import PERSONAL_KEY, POSTGRES_USER, POSTGRES_PASSWORD
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -132,3 +133,5 @@ STATIC_URL = '/static/'
 CORS_ALLOWED_ORIGINS = [
     'http://dev.personal.com'
 ]
+
+django_heroku.settings(locals())
